@@ -1,7 +1,207 @@
 <!DOCTYPE html>
+<head>
+    <style>
+        header {
+            font-family: Arial, sans-serif;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .myName {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            font-size: 300%;
+        }
+        .myPosition{
+            position: absolute;
+            top: 64px;
+            left: 64px;
+            font-size: 150%;
+        }
+        .caption{
+            position: absolute;
+            bottom: -32px
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+            
+        }
+
+        /* Create two equal columns that sits next to each other */
+        .column {
+            flex: 50%;
+            padding: 10px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .detailBar{
+            background-color: #990000;
+            color: white;
+            font-size: 100%;
+            margin-top: -4px;
+            margin-bottom: 0px;
+            text-align: center;
+            border-width: 0px;
+        }
+        a:link {
+            color: white;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:visited {
+            color: white;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover {
+            color: white;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        .vertical-center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+    <header>
+        <div class="container">
+                <img src="images/header_32x9.png" alt="Edward at a conference" style="opacity:0.7">
+                <div class="myName" style="color:#990000">
+                    <strong>Edward Dunn</strong>
+                </div>
+                <div class="myPosition" style="color:#990000">
+                    <strong>PhD Student at Lancaster University</strong>
+                </div>
+        </div>
+    </header>
+    <body>
+        <div class="detailBar">
+            <div class="row">
+                <div class="column">
+                    <p><b><br></b></p>
+                    <p>Staff Directory:</p>
+                    <p>Email:</p>
+                </div>
+                <div class="column">
+                    <p><b>Edward Dunn</b></p>
+                    <p><a href="https://www.research.lancs.ac.uk/portal/en/people/edward-dunn(d9b0b826-7594-4a2e-a01b-167af2ef4101).html">My Profile</a></p>
+                    <p>e.dunn2@lancaster.ac.uk</p>
+                </div>
+                <div class="column">
+                    <p><b>Supervisor:</b></p>
+                    <p><a href="https://www.research.lancs.ac.uk/portal/en/people/samuel-jarvis(c5f0c2b1-aa69-40e1-badc-b74e5fe9ea3a).html">Sam Jarvis</a></p>
+                    <p>samuel.jarvis@lancaster.ac.uk</p>
+                </div>
+                <div class="column">
+                    <p><b>Co-Supervisor:</b></p>
+                    <p><p><a href="https://www.research.lancs.ac.uk/portal/en/people/robert-young(c62e8e6f-7ab8-4743-af62-9c4af86f72d7).html">Rob Young</a></p>
+                    <p>r.j.young@lancaster.ac.uk</p>
+                </div>
+                <div class="column" style="background-color:black">
+                    <p style="font-size:120%"><a href="#Experiment">Experiment</a></p>
+                    <p style="font-size:120%"><a href="#Simulation">Simulation</a></p>
+                    <p style="font-size:120%"><a href="#Activity">Activity</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <h1>PhD Outline</h1>
+                    <p>
+                        In Physics, crystals are considered as a repeating pattern of atoms. This periodicity leads to many symmetries which have a key role in the properties of a material. However, in reality, the pattern is rarely perfect and these deviations, called defects, lead to strong localized changes in a material's properties.
+                    </p>
+                    <p>
+                        I am interested in observing atomic defects in 2D materials in high resolution and relating these defects to variations on a scale that could be measured optically. In my work, I use cAFM and low temperature photoluminescence spectra in the Isolab facility; built to isolate experiments from mechanical vibrations, electromagnetic radiation and electrical noise.
+                    </p>
+            </div>
+            <div class="column">
+                <img src="images/ED_1.png" alt="Edward at a conference">
+            </div>
+        </div>
+        <a name="Experiment" id="Experiment"></a></a>
+        <div class="row">
+            <div class="column">
+                <img src="images/02171640.0_00001_EMRS_noProf.png" alt="A type 1, depleting defect">
+            </div>
+            <div class="column">
+                <h1>cAFM</h1>
+                <p>
+                    The characterization of defects with Scanning Tunnelling Microscopy (STM) has granted researchers insights into their electrical properties on the atomic scale.  cAFM (conductive Atomic Force Microscopy) complements STM by providing atomic resolution images where STM is inappropriate (ambient conditions, in-gap measurements).
+                </p>
+                <p>
+                    If the nature of a defect could be ascertained from cAFM images, the density of a chosen defect could be surveyed trivially simplifying such measurements.  As a result, I am working to characterize defects in Transition Metal Dichalcogenides via cAFM, so that I can correlate their density with changes in photoluminescence.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <h1>Photoluminescence</h1>
+                <p>
+                    When a semiconductor is illuminated by photons with sufficent energy, electrons are excited across the band gap and then spontaneously relax, releasing a photon.  Before falling back to the conduction band, the electron loses energy until it lies directly above the bandgap, meaning that the energy of the emitted photon will reflect the size of the band gap.
+                </p>
+                <p>
+                    The band gap of a semiconductor can vary due to defects, meaning that if the density of defects can be correlated with changes in photoluminescence that they produce, the distribution of defects can be studied on a more accessible length scale.
+                </p>
+                <p>
+                    Our Photoluminescence measurements are carried out at cryogenic temperatures as low as 10K.  Measuring at low temperatures increases the resolution in energy and allows the peaks contributing to a Photoluminescence signal to be differentiated.
+                </p>
+            </div>
+            <div class="column">
+                <img src="images/Centre_eV.png" alt="Photoluminescence Maps">
+            </div>
+        </div>
+        <a name="Simulation" id="Simulation"></a>
+        <div class="row">
+            <div class="column">
+                <img src="images/ZnTPP_250pN.png" alt="A constant force simulation of ZnTPP on Au<111>">
+            </div>
+            <div class="column">
+                <h1>Simulation of Constant Force AFM</h1>
+                <p>
+                    The assembly of planar molecules on surfaces has been revealed in great detail by Non-Contact AFM (NC-AFM).  As the tip is oscillated at a constant height, the signal is exceptionally clear for atoms a particular distance below, meaning that non-planar molecules are not very clear when imaged by this technique.
+                </p>
+                <p>
+                    The realization of a constant force technique in the vacuum environment would shed light onto non-planar molecules as a good signal could be maintained for atoms at multiple heights.  By simulating idealized constant force images we show the value in developing such a technique and offer a method of interpreting any features that are observed.
+                </p>
+            </div>
+        </div>
+        <a name="Activity" id="Activity"></a>
+        <h1>Activity</h1>
+        <h2>2022</h2>
+                <p>
+                    <b>ECOSS 35:</b> Oral Presentation - "Atomic defects in TMDs: revealing electronic and chemical structure with conductive microscopy"  
+                </p>
+                <p>
+                    <b>CMD 29:</b> Oral Presentation - "Correlating the electronic and chemical structure of defects in TMDs with atomic resolution conductive microscopy"
+                </p>
+                <p>
+                    <b>CMD 29:</b> Oral Presentation - "Simulated imaging of submolecular structure in molecules with high topographic variation"
+                </p>
+                <p>
+                    <b>NowNano CDT Conference:</b> Oral Presentation - "Probing TMD defects with atomic scale probe microscopy"
+                </p>
+                <p>
+                    <b>E-MRS 2022 Spring Meeting:</b> Oral Presentation - "Probing TMD defects with atomic scale probe microscopy"
+                </p>
+    </body>
 </html>
